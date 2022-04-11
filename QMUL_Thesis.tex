@@ -1,0 +1,138 @@
+%%-----------------------------------------------------------------------%%
+%% This template was created by Celeste Damiani
+%% for the training session "LaTeX for writing your thesis"
+%% at Queen Mary University of London, April 2021.
+%%-----------------------------------------------------------------------%%
+%% This is your master document. Use as a dashboard to your project
+
+%% Preamble
+%%----------------------------------------------------------------------------------
+\RequirePackage[l2tabu, orthodox]{nag} % nag will show warnings if you're using obsolete or deprecated commands. Optional.
+
+\documentclass[12pt, a4paper, oneside]{book}
+
+\input{InitialFinalMaterials/Packages.tex}
+
+%% Special Environments
+%%------------------------------------------------------------------------------------
+\input{InitialFinalMaterials/Environments.tex}
+
+%% Macros
+%%-----------------------------------------------------------------------------------
+\input{InitialFinalMaterials/Macros.tex}
+
+
+%%------------------------------------------------------------------------------------
+%% Begin document (first set spacing with package setspace)
+%% and remember to check at the end of titlepage
+%% that the spacing is still set to what you want (see QM rules)
+%%------------------------------------------------------------------------------------
+\doublespacing
+%\onehalfspacing
+
+%% to make a part of the text of your document singlespaced:
+%% \begin{singlespace}
+%% text
+%% \end{singlespace}
+
+% Content Name
+\renewcommand*\contentsname{Table of Contents}
+
+% 1.5 line spacing just like word
+\linespread{1.25}
+
+
+\begin{document}
+
+% \frontmatter
+
+%%------------------------------------------------------------------------------------
+%% Beginning of Frontmatter
+%%------------------------------------------------------------------------------------
+
+\input{InitialFinalMaterials/Titlepage.tex} % titlepage
+
+
+% Statement of originality
+%----------------------------------------------------------
+% \include{InitialFinalMaterials/Statement}  
+
+
+% content
+\tableofcontents
+
+
+% Abstract
+%----------------------------------------------------------
+\include{InitialFinalMaterials/Abstract}  
+
+
+
+% Epighraph 
+%----------------------------------------------------------
+% \cleardoublepage
+% \thispagestyle{empty}
+% \epigraph{O time, thou must untangle this, not I.
+% It is too hard a knot for me to untie!}
+% {\textit{Twelfth Night}\\
+% \textsc{Shakespeare}}
+
+% Acknowledgements and licences
+%----------------------------------------------------------
+% \include{InitialFinalMaterials/Acknowledgements}
+
+
+%  Table of contents           
+%----------------------------------------------------------
+% \tableofcontents
+% \listoffigures
+% \listoftables
+
+
+
+%%------------------------------------------------------------------------------------
+%% Beginning of Mainmatter
+%%------------------------------------------------------------------------------------
+
+
+
+\include{TemplatePhD_QMUL/Chapters/intro}
+
+\include{TemplatePhD_QMUL/Chapters/background}
+
+\include{TemplatePhD_QMUL/Chapters/method}
+
+\include{TemplatePhD_QMUL/Chapters/exp}
+
+\include{TemplatePhD_QMUL/Chapters/Conclusion}
+
+
+
+
+
+%%------------------------------------------------------------------------------------
+%% Appendices 
+%%------------------------------------------------------------------------------------
+% \appendix % resets chapter numbering, uses letters for appendix chapter numbers
+
+% \include{Chapters/Appendix}
+
+
+%%------------------------------------------------------------------------------------
+%% Beginning of Backmatter
+%%------------------------------------------------------------------------------------
+\backmatter % turns off chapter numbering 
+
+
+%Bibliografia
+%------------------------------------------------------------------
+\bibliography{InitialFinalMaterials/Bibliography.bib}{}
+% \bibliographystyle{plain}
+
+\include{TemplatePhD_QMUL/InitialFinalMaterials/Acknowledgements}
+
+\include{TemplatePhD_QMUL/Chapters/Appendix}
+
+
+% \printindex 		% to make the index
+\end{document}

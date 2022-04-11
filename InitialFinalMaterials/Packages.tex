@@ -1,0 +1,176 @@
+
+% languages, fonts and geometry
+%------------------------------------------------------------------------------------
+\usepackage[utf8]{inputenc}
+\usepackage[italian, main = english]{babel} 			% manages typographical rules and hyphenation for the option languages
+\usepackage[T1]{fontenc}							% manages font encoding (accents, copy and paste, ...)
+
+\usepackage{titlesec, color}
+\definecolor{gray75}{gray}{0.75}
+\newcommand{\hsp}{\hspace{6pt}}
+\titlespacing{\chapter}{0pt}{-50pt}{12pt}% left space, top space, bottom space
+\titleformat{\chapter}[hang]{\Large\bfseries}{Chapter \thechapter:\hsp}{0pt}{\Large\bfseries}
+
+\titleformat{\section}[hang]{\large\bfseries}{ \thesection\hsp}{0pt}{\large\bfseries}
+
+\titleformat{\section}[hang]{\bfseries}{ \thesection\hsp}{0pt}{\bfseries}
+
+% support for chinese
+% \usepackage[UTF8]{ctex}
+\usepackage{xeCJK}
+
+
+% Load the parskip package without options
+\usepackage{parskip}
+
+%%-----------------------------------------------------------------------%%
+%% from QM Guidance Notes on the Submission:
+%% margins at the binding edge must be not less than 40 mm (1.5 inches)
+%% and other margins not less than 20 mm (.75 inches). Double or one-and-a-half
+%% spacing should be used, except for indented quotations or footnotes where single
+%% spacing may be used. 
+%%-----------------------------------------------------------------------%%
+
+
+\usepackage[ 
+		layoutoffset=0pt,						% No offset on the margins of the page
+		bottom=2.5cm, 
+		top=2.5cm,	
+		left=2.5cm, 
+		right=2.5cm,			
+		bindingoffset=0pt,						% We already set a bigger binding edge margin
+		headheight=26pt				% top space dedicated to the header
+		]{geometry}	
+					
+\usepackage{microtype, fancyhdr}	 % typesetting adjustments
+\usepackage{setspace}					 %allows local control over line spacing
+\usepackage{pdflscape} 					 % makes landscape pages display as landscape when opening the pdf
+
+
+%maths
+%------------------------------------------------------------------------------------
+\usepackage{amsfonts,amsmath,amsthm,amssymb, mathrsfs, amscd}	 %maths formatting
+\numberwithin{equation}{chapter}	
+%\numberwithin{table}{chapter} 
+%\numberwithin{figure}{chapter}
+\usepackage{faktor}
+\allowdisplaybreaks
+
+%tools
+%------------------------------------------------------------------------------------
+\usepackage{url, enumitem} 			% for linkable urls and nice lists
+% \usepackage[noadjust]{cite}				% biblio management
+\usepackage{epigraph}						% self explanatory
+\usepackage[nottoc]{tocbibind}			% to make the bibliography appear in the ToC
+\usepackage{blindtext}						% this is just to generate dummy text, remove 
+\usepackage{imakeidx}					% to make an index, see end of document
+\makeindex
+
+
+%tables & pictures
+%------------------------------------------------------------------------------------
+\usepackage{float} % force graph
+\usepackage{graphicx} 				% basic to include images and use colours
+\graphicspath{{Pictures/}}				% set the path to the folder with pictures
+\usepackage{xcolor}
+\usepackage{longtable} 				%helps format tables that are over a page long
+\usepackage{lscape} 					%allows (tables) landscape formatting
+\usepackage{booktabs} 				% general table formatting
+\newcommand{\bftab}{\fontseries{b}\selectfont}
+
+\usepackage{multicol} 					%allows table cells to cover two columns
+\usepackage{multirow}		
+%\usepackage{caption} 				% more tools to customise for captions
+%\captionsetup[longtable]{position=below}	
+\usepackage{wrapfig} 					% allows to wrap text around figures
+
+\usepackage[numbers]{natbib}
+\bibliographystyle{plainnat}
+
+% Please add the following required packages to your document preamble:
+\usepackage{booktabs}
+\usepackage[linesnumbered,ruled]{algorithm2e}
+
+% Header and footer settings, for options: https://www.ctan.org/pkg/fancyhdr
+%-------------------------------------------------------------------------------------
+\pagestyle{fancy}                  			 % Sets fancy header and footer
+% \fancyfoot{}                            		    	 % Delete current footer settings
+
+\definecolor{mygray}{gray}{0.6}
+
+\fancyhf{}
+\fancyhead[L]{\textcolor{mygray}{Is it that hard to practice Gnar in one season?}}
+\fancyfoot[R]{\thepage}
+
+\renewcommand{\headrulewidth}{0pt}
+
+
+% \renewcommand{\chaptermark}[1]{        
+%   \markboth{\chaptername\ \thechapter.\ #1}{}} % Lower Case Chapter marker style
+% \renewcommand{\sectionmark}[1]{       
+%   \markright{\thesection.\ #1}}				 % Lower case Section marker style
+% %\fancyhead[LE]{\bfseries\thepage}		 % Page number (boldface) in  Left on Even pages (if document is twoside)
+% \fancyhead[RO]{\bfseries\thepage}        %  and Right on Odd pages
+% %\fancyhead[RE]{\bfseries\leftmark}     % Chapter in the Right on Even pages (if document is twoside)
+% \fancyhead[LO]{\bfseries\rightmark}      % Section in the Left on Odd pages
+
+% \let\headruleORIG\headrule
+% \renewcommand{\headrule}{\color{mygray} \headruleORIG}
+% \renewcommand{\headrulewidth}{1.0pt}
+% \usepackage{colortbl}
+% \arrayrulecolor{mygray}
+
+% \fancypagestyle{plain}{
+%   \fancyhead{}
+%   \fancyfoot{}
+%   \renewcommand{\headrulewidth}{0.3pt}
+% }
+
+
+% % Remove headers from empty pages
+% %-----------------------------------------------------------------------------------
+% \makeatletter
+% \def\cleardoublepage{\clearpage\if@twoside \ifodd\c@page\else%
+%     \hbox{}%
+%     \thispagestyle{empty}%              % Empty header styles
+%     \newpage%
+%     \if@twocolumn\hbox{}\newpage\fi\fi\fi}
+% \makeatother
+
+
+
+% % first page of a chapter
+% %------------------------------------------------------------------------------------
+\fancypagestyle{plain}{% <==============================================
+  \fancyhf{}
+  \fancyfoot[R]{\thepage}
+  \fancyhead[L]{\textcolor{mygray}{Is it that hard to practice Gnar in one season?}}
+
+  \renewcommand{\headrulewidth}{0pt}
+  \renewcommand{\footrulewidth}{0pt}%
+}
+
+
+
+
+%hyperref, breqn e altri pacchetti rompipalle
+%-----------------------------------------------------------------------------------
+\usepackage[linktocpage,bookmarksnumbered,pagebackref]{hyperref} % clickable links, citations and crossreferences. Can change their colour and appearance in the options.
+\usepackage{breqn} % equations on more lines, remove if no equations
+\usepackage{pdfpages} 
+
+
+% Table of Content
+
+
+
+% \usepackage[tocflat]{tocstyle}
+% \usetocstyle{standard}
+
+% \cftsetindents{section}{0em}{2em}
+% \cftsetindents{subsection}{2em}{2em}
+
+% \renewcommand\cfttoctitlefont{\hfill\Large\bfseries}
+% \renewcommand\cftaftertoctitle{\hfill\mbox{}}
+
+% \setcounter{tocdepth}{2}

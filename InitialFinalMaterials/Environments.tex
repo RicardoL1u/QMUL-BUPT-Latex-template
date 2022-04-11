@@ -1,0 +1,35 @@
+% Special environments we need to define
+
+\newtheorem{myDef}{Definition}
+
+
+\theoremstyle{plain}
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{lem}[thm]{Lemma}
+
+\theoremstyle{remark}
+\newtheorem{rmk}[thm]{Remark}
+\newtheorem{notaz}[thm]{Notation}
+\newtheorem{claim}[thm]{Claim}
+
+
+\theoremstyle{definition}
+\newtheorem{defn}[thm]{Definition}
+\newtheorem{exam}[thm]{Example}
+
+
+
+% Theorems with a letter as counter
+\newtheorem{theorem}{Theorem} 
+\renewcommand*{\thetheorem}{\Alph{theorem}} 
+
+% Informal definition
+\newtheorem*{infdefinition}{Informal definition}
+\renewcommand*{\thedefn}{}
+
+% Définition informelle
+\newtheorem*{Finfdefinition}{Définition Informelle}
+\renewcommand*{\thedefn}{}
+
