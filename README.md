@@ -1,7 +1,7 @@
 # QMUL-BUPT-Latex-template
 QMUL-BUPT-Latex-template 
 
-## Attention
+## Warning
 
 与学校的word版本还是有一定上的排版差别
 
@@ -11,6 +11,9 @@ QMUL-BUPT-Latex-template
 
 Has been successfully compiled in [overleaf](https://www.overleaf.com/) with complier ```XeLatex```
 
+
+ ## how to use
+ 
 Check to the Packages.tex to change the header to your project title
 
 > more info is coming
