@@ -5,7 +5,7 @@ QMUL-BUPT-Latex-template
 
 与学校的word版本还是有一定上的排版差别
 
-（江来出了问题，我可不负泽
+（江来出了问题，我可不负泽，红豆泥，私密马赛！
 
 ## Envirnment
 
