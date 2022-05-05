@@ -63,9 +63,9 @@ Switch to the ```Packages.tex``` in the ```Environment```  folder to change the 
 
 1. Modify the word file ```TitlePage.docx``` in the ```Environment```  folder 
 
-2. Export the word file to pdf file ```TitlePage.pdf```
+2. Export the word file to the pdf file ```TitlePage.pdf```
 
 3. Recompile
 
-> more info is coming
+
 
