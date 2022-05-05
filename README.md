@@ -103,6 +103,6 @@ Switch to the ```Packages.tex``` in the ```Environment```  folder to change the 
     A:如果是参考文献，确保你已经编译了最新的 `.bib` 文件；如果不是，再用XeLaTeX编译一遍。一种粗放的比喻是，**在这里的“编译”就如同Windows的“重启”一样**，虽然暴力但有用。
 
 ## TODO
-- the format of appendix page (how to insert tables)
+- the format of appendix page // In fact, there is no so-called 'official format' for the appendix part 
 - the format of title page
 > Both 2 above issues can be temporarily addressed by directly inserting pdf pages in the final report, a [guide](https://stackoverflow.com/questions/2739159/inserting-a-pdf-file-in-latex) about this 
