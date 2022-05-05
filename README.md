@@ -10,7 +10,7 @@ This is the latex template for the BBC6521 final project of the joint programme 
 QMUL-BUPT-Latex-template
 │   README.md
 │   QMUL_Thesis.tex // the main tex file   
-|   output.pdf // an example output pdf file
+|   example.pdf // an example output pdf file
 │
 └───Chapters
 │   │   Abstract.tex
