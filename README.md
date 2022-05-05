@@ -12,9 +12,31 @@ QMUL-BUPT-Latex-template
 Has been successfully compiled in [overleaf](https://www.overleaf.com/) with complier ```XeLatex```
 
 
- ## how to use
+## how to use
  
-Check to the Packages.tex to change the header to your project title
+
+ ### How to compile it
+1. Download the zip of this repo from [this link](https://github.com/RicardoL1u/QMUL-BUPT-Latex-template/archive/refs/heads/main.zip)
+
+2. Upload the zip file to [overleaf](https://www.overleaf.com/) 
+
+> In fact, you can use any latex compile tools as you like, for example [TeXstudio](https://www.texstudio.org/)
+
+3. Enjoy the Latex :)
+
+
+ ### How to change the header 
+Switch to the ```Packages.tex``` in the ```Environment```  folder to change the header to your project title
+
+### How to modify the title page
+
+0. Since my ability is limited, I recommend the way by inserting a pdf to address the title page issue :(
+
+1. Modify the word file ```TitlePage.docx``` in the ```Environment```  folder 
+
+2. Export the word file to pdf file ```TitlePage.pdf```
+
+3. Recompile
 
 > more info is coming
 
