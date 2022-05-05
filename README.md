@@ -67,9 +67,7 @@ Switch to the ```Packages.tex``` in the ```Environment```  folder to change the 
 
 3. Recompile
 
-上线日期：2018/4/24
 
-最新发行版日期：2018/5/17
 
 ## FAQ
 
