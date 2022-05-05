@@ -19,11 +19,13 @@ QMUL-BUPT-Latex-template
 |   |   .....
 |
 └───Environment
-    │   Bibliography.bib 
-    │   Environments.tex // Special environments we need to define, such as Definition block
-    |   Packages.idx // Packages we used including xeCJK for chinese
-    |   TitlePage.docx // For Title Page
-    └───TitlePage.pdf
+│   │   Bibliography.bib 
+│   │   Environments.tex // Special environments we need to define, such as Definition block
+│   |   Packages.idx // Packages we used including xeCJK for chinese
+│   |   TitlePage.docx // For Title Page
+│   └───TitlePage.pdf
+│
+└───Pictures // folder for your figures in final report
 ```
 
 ## Warning
