@@ -59,7 +59,7 @@ Switch to the ```Packages.tex``` in the ```Environment```  folder to change the 
 
 0. Since my ability is limited, I recommend the way by inserting a pdf to address the title page issue :(
 
-    > If you got any good ideas, for example, modify the ````Title Page.tex``` to the format that the international school Academic Affairs Office require, plz drop me a pull request
+    > If you got any good ideas, for example, modify the ```Title Page.tex``` to the format that the international school Academic Affairs Office require, plz drop me a pull request
 
 1. Modify the word file ```TitlePage.docx``` in the ```Environment```  folder 
 
