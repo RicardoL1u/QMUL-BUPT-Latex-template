@@ -49,7 +49,7 @@ Has been successfully compiled in [overleaf](https://www.overleaf.com/) with com
 
 > In fact, you can use any latex compile tools as you like, for example [TeXstudio](https://www.texstudio.org/)
 
-3. Change the compiler to ```XeLatex``` , a [guide](overleaf.com/learn/how-to/Changing_compiler) about how to change compiler in overleaf
+3. Change the compiler to ```XeLatex``` , a [guide](https://overleaf.com/learn/how-to/Changing_compiler) about how to change compiler in overleaf
 
 3. Enjoy the Latex :)
 
