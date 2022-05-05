@@ -50,7 +50,9 @@
 %% Beginning of Frontmatter
 %%------------------------------------------------------------------------------------
 
-\input{InitialFinalMaterials/Titlepage.tex} % titlepage
+\includepdf[pages=-]{InitialFinalMaterials/TitlePage.pdf}
+
+% \input{InitialFinalMaterials/Titlepage.tex} % titlepage
 
 
 % Statement of originality
@@ -96,15 +98,15 @@
 
 
 
-\include{TemplatePhD_QMUL/Chapters/intro}
+\include{Chapters/intro}
 
-\include{TemplatePhD_QMUL/Chapters/background}
+\include{Chapters/background}
 
-\include{TemplatePhD_QMUL/Chapters/method}
+\include{Chapters/method}
 
-\include{TemplatePhD_QMUL/Chapters/exp}
+\include{Chapters/exp}
 
-\include{TemplatePhD_QMUL/Chapters/Conclusion}
+\include{Chapters/Conclusion}
 
 
 
@@ -129,9 +131,9 @@
 \bibliography{InitialFinalMaterials/Bibliography.bib}{}
 % \bibliographystyle{plain}
 
-\include{TemplatePhD_QMUL/InitialFinalMaterials/Acknowledgements}
+\include{Chapters/Acknowledgements}
 
-\include{TemplatePhD_QMUL/Chapters/Appendix}
+\include{Chapters/Appendix}
 
 
 % \printindex 		% to make the index
