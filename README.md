@@ -1,5 +1,5 @@
 # QMUL-BUPT-Latex-template
-This is the latex template for the BBC6521 final project of joint programme between [BUPT](https://www.bupt.edu.cn/) and [QMUL](https://www.qmul.ac.uk/)
+This is the latex template for the BBC6521 final project of the joint programme between [BUPT](https://www.bupt.edu.cn/) and [QMUL](https://www.qmul.ac.uk/)
 
 
 ## File Tree
